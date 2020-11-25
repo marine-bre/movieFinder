@@ -8,6 +8,15 @@ const options = {
 const io = require('socket.io')(http, options)
 const cors = require('cors')
 
+// serve up production assets
+app.use(express.static('client/build'));
+// let the react app to handle any unknown routes 
+// serve up the index.html if express does'nt recognize the route
+const path = require('path');
+app.get('*', (req, res) => {
+res.sendFile(path.join(__dirname, '/client/build/index.html'));
+});
+
 app.use(cors())
 
 app.get('/', (req, res) => {
@@ -48,12 +57,6 @@ io.on('connection', (socket) => {
     })
 }
 )
-
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 const PORT = process.env.PORT || 5000;
 
