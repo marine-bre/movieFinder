@@ -174,7 +174,7 @@ p {
   line-height: 90%;
 }
 
-.cards::-webkit-scrollbar {
+/* .cards::-webkit-scrollbar {
   background: transparent;
   width: 5px;
   height: 5px;
@@ -182,4 +182,4 @@ p {
 .cards::-webkit-scrollbar-thumb {
   border-radius: 15px;
   background-color: grey;
-}
+} */
