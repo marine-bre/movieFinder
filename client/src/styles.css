@@ -173,3 +173,12 @@ p {
 .cards .btn{
   line-height: 90%;
 }
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: grey;
+}
