@@ -49,6 +49,10 @@ io.on('connection', (socket) => {
 }
 )
 
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+  }
+
 const PORT = process.env.PORT || 5000;
 
 http.listen(PORT, () => {
