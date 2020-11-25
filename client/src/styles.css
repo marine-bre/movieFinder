@@ -177,6 +177,7 @@ p {
 .cards::-webkit-scrollbar {
   background: transparent;
   width: 5px;
+  height: 5px;
 }
 .cards::-webkit-scrollbar-thumb {
   border-radius: 15px;
