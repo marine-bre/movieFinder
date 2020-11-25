@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app)
-// const options = {
-//     cors:true, 
-//     origins:['http://localhost:3000']
-// }
+const options = {
+    cors:true, 
+    // origins:['http://localhost:3000']
+    origins:['https://movie-finder-app-react.herokuapp.com/']
+}
 const io = require('socket.io')(http, options)
 const cors = require('cors')
 
