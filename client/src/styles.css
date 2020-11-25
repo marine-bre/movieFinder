@@ -174,11 +174,11 @@ p {
   line-height: 90%;
 }
 
-::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
   background: transparent;
   width: 5px;
 }
-::-webkit-scrollbar-thumb {
+.cards::-webkit-scrollbar-thumb {
   border-radius: 15px;
   background-color: grey;
 }
