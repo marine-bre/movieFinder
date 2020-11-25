@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9eb90e12.chunk.css",
-    "main.js": "/static/js/main.67644af5.chunk.js",
-    "main.js.map": "/static/js/main.67644af5.chunk.js.map",
+    "main.css": "/static/css/main.3e1be25e.chunk.css",
+    "main.js": "/static/js/main.a992cc82.chunk.js",
+    "main.js.map": "/static/js/main.a992cc82.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df1f8c03.js",
     "runtime-main.js.map": "/static/js/runtime-main.df1f8c03.js.map",
     "static/css/2.dba7363f.chunk.css": "/static/css/2.dba7363f.chunk.css",
@@ -12,17 +12,14 @@
     "static/js/3.f848187c.chunk.js.map": "/static/js/3.f848187c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.dba7363f.chunk.css.map": "/static/css/2.dba7363f.chunk.css.map",
-    "static/css/main.9eb90e12.chunk.css.map": "/static/css/main.9eb90e12.chunk.css.map",
-    "static/js/2.dd135a34.chunk.js.LICENSE.txt": "/static/js/2.dd135a34.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/static/media/background.590d7d2c.jpg",
-    "static/media/modal1.2aba196f.png": "/static/media/modal1.2aba196f.png",
-    "static/media/modal2.8d20e5ed.png": "/static/media/modal2.8d20e5ed.png"
+    "static/css/main.3e1be25e.chunk.css.map": "/static/css/main.3e1be25e.chunk.css.map",
+    "static/js/2.dd135a34.chunk.js.LICENSE.txt": "/static/js/2.dd135a34.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.df1f8c03.js",
     "static/css/2.dba7363f.chunk.css",
     "static/js/2.dd135a34.chunk.js",
-    "static/css/main.9eb90e12.chunk.css",
-    "static/js/main.67644af5.chunk.js"
+    "static/css/main.3e1be25e.chunk.css",
+    "static/js/main.a992cc82.chunk.js"
   ]
 }
