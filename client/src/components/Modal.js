@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ReactDom from 'react-dom'
 import '../styles.css'
-import background1 from '../pictures/modal1.png';
-import background2 from '../pictures/modal2.png';
+const background1 = 'https://raw.githubusercontent.com/marine-bre/movieFinder/master/client/src/pictures/modal1.png';
+const background2 = 'https://raw.githubusercontent.com/marine-bre/movieFinder/master/client/src/pictures/modal2.png';
 
 
 
