@@ -54,7 +54,7 @@ io.on('connection', (socket) => {
 }
 )
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 http.listen(PORT, () => {
     console.log(`Server is connected on port ${PORT}`)
