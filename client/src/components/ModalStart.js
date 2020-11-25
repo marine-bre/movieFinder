@@ -4,18 +4,22 @@ import '../styles.css'
 import uuid from 'react-uuid'
 import { socket } from '../contexts/socket'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
 
 function ModalStart({ setRoomModal, setIsStarting, setInGenre }) {
     const [code, setCode] = useState('')
     const [newCode, setNewCode] = useState('')
     const [error, setError] = useState('')
+    const [hidden,setHidden] = useState('hidden')
 
     const createCode = () => {
         setNewCode(uuid());
         console.log(newCode)
+        setHidden('')
     }
 
-
+    const copyCode = () => navigator.clipboard.writeText(newCode)
+    
     const MODAL_STYLE = {
         zIndex: 1000,
         transform: 'translate(-50%, -50%)',
@@ -27,7 +31,7 @@ function ModalStart({ setRoomModal, setIsStarting, setInGenre }) {
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
-        borderRadius: '4%',
+        borderRadius: '2%',
         alignItems: 'center',
         padding: '10px 80px',
         position: 'fixed'
@@ -51,7 +55,6 @@ function ModalStart({ setRoomModal, setIsStarting, setInGenre }) {
 
     const keyPressEvent = (e) => {
         if ((e.which || e.charCode || e.keyCode) === 13) { handleClick() }
-
     }
 
     return ReactDom.createPortal(
@@ -63,7 +66,7 @@ function ModalStart({ setRoomModal, setIsStarting, setInGenre }) {
                 <input onChange={(e) => setCode(e.target.value)} value={code} type='text' id='room' onKeyPress={keyPressEvent}></input>
                 <button className='btn' onClick={handleClick}> Enter </button>
                 <button className='btn' onClick={createCode}>I need a code</button>
-                <p>{newCode}</p>
+                <p>{newCode}   <FontAwesomeIcon icon={faCopy} className={hidden} onClick={copyCode} /></p>
                 <p className='error'>{error}</p>
             </div>
         </>,
