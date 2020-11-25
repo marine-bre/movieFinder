@@ -19,10 +19,6 @@ res.sendFile(path.join(__dirname, '/client/build/index.html'));
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send('server')
-})
-
 //variable to store potential matches
 let indexes=[];
 
