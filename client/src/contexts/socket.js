@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import io from 'socket.io-client'
 
-// const ENDPOINT = 'http://localhost:5000/'
-const ENDPOINT = 'https://movie-finder-app-react.herokuapp.com/socket.io/?EIO=4&transport=websocket'
-export const socket = io(ENDPOINT);
+// const ENDPOINT = 'https://movie-finder-app-react.herokuapp.com'
+// export const socket = io(ENDPOINT);
+
+export let socket = io.connect(window.location.hostname)
 
 export const SocketListen = ({preferences, setPreferences}) => {
 
