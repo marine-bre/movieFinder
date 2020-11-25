@@ -22,7 +22,7 @@ let random = Math.floor(Math.random()*5)
             boxShadow: `3px 3px 1px ${shadows[random]}` }}>
                     <h1>{title}</h1>
                     <img style={{ height: '350px', width: 'auto' }} src={posterUrl} />
-                    <p>{overview}</p>
+                    <p className='desc'>{overview}</p>
                     <p>Original language: {originLanguage}</p>
                     <div className='btn-wrapper'>
                     <button className='btn' onClick={positive}> Yes!</button>
