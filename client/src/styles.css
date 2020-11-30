@@ -122,14 +122,6 @@ p {
   height: 140px;
 }
 
-.background-modal {
-  z-index: -10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 120%;
-}
-
 .quiz {
   width: 600px;
   height: 90vh;
