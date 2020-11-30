@@ -35,7 +35,7 @@ function Start() {
 
     return (
         <div className='home'>
-            <div className='background-image' />
+            {/* <div className='background-image' /> */}
             <SocketListen setPreferences={setPreferences} preferences={preferences} received={received} setReceived={setReceived} />
             <Container fluid>
             {/* Starting block */}

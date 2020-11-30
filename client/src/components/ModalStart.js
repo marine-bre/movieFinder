@@ -66,7 +66,7 @@ function ModalStart({ setRoomModal, setIsStarting, setInGenre }) {
                 <input onChange={(e) => setCode(e.target.value)} value={code} type='text' id='room' onKeyPress={keyPressEvent}></input>
                 <button className='btn' onClick={handleClick}> Enter </button>
                 <button className='btn' onClick={createCode}>I need a code</button>
-                <p>{newCode}   <FontAwesomeIcon icon={faCopy} className={hidden} onClick={copyCode} /></p>
+                <p>{newCode}   <FontAwesomeIcon style={{cursor:'pointer'}} icon={faCopy} className={hidden} onClick={copyCode} /></p>
                 <p className='error'>{error}</p>
             </div>
         </>,
